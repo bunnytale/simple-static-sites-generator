@@ -1,0 +1,27 @@
+#+author: bunnytale
+#+email: usagimimi@protonmail.com
+#+language: en
+#+startup: showall
+
+* static sites tool
+
+  this is a small tooling I`ve been using to create static sites and prototypes faster
+  for some applications, I hope it could be helpful for someone
+
+** scripts
+
+   /npm build/: build pages from source once
+
+   /npm watch/: will run gulp watch and recompile the pages whenever a change occur to
+   its sources
+
+** directory structure
+   your less (styling) code must be placed inside /\/src\/styles\// directory and the final
+   processed css files will created within /\/public\/css/ directory.
+
+   pug templates must be in /\/src\/templates/ directory.
+
+   your coffeescript files should stay in your /\/src\/scripts/ directory as well.
+
+   static assets must live in \/assets\/ directories, they are not processed by any means
+   from gulp tasks.
